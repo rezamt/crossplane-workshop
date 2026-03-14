@@ -1,0 +1,11 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: workshop-bucket
+  annotations:
+    crossplane.io/external-name: upboundpoc202601
+spec:
+  forProvider:
+    region: ap-southeast-2
+  providerConfigRef:
+    name: default
